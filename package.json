@@ -2,14 +2,15 @@
   "name": "resilient-email-service",
   "version": "1.0.0",
   "description": "A resilient email sending service with retry, fallback, rate-limiting, and circuit breaker",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
     "build": "tsc",
-    "start": "ts-node src/server.ts",
-    "test": "jest"
+    "start": "node dist/server.js",
+    "test": "jest",
+    "postinstall": "npm run build"
   },
   "keywords": ["email", "resilient", "typescript", "retry", "circuit-breaker"],
-  "author": "Your Name",
+  "author": "Sai Teja Puppala",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^5.0.3",
@@ -20,7 +21,6 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "express": "^5.1.0",
-    "ts-node": "^10.9.2"
+    "express": "^5.1.0"
   }
 }
