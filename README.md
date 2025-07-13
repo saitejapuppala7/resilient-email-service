@@ -143,4 +143,3 @@ Rate limit and circuit breaker thresholds are hardcoded but adjustable in constr
 Sai Teja Puppala 
 saiteja.avengers@gmail.com
 
-This project was built as part of a React Native Internship technical assignment
